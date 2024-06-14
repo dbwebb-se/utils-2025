@@ -107,6 +107,18 @@ table tbody tr:hover{
     align-items: center;
 }
 
+.author-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.author-images img {
+    margin-bottom: 1.75rem;
+    border-radius: 50%;
+    max-width: 100%;
+}
+
 @media (min-width: 67.5rem) {
     html {
         font-size: 112.5%;
