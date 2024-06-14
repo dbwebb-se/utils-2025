@@ -28,7 +28,8 @@ p {
 
 h1 {
     font-size: 3rem;
-    margin-bottom: 1.75rem
+    margin-bottom: 1.75rem;
+    border-bottom: 3px solid #41561f;
 }
 
 h2 {
@@ -42,12 +43,29 @@ h3 {
 }
 
 .header {
-    padding: 1.75rem;
+    padding: 0.875rem 1.75rem;
     border-bottom: 1px solid #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.75rem;
 }
 
 .dbwebb-header {
     margin-bottom: 0;
+    border: none;
+    color: #333;
+}
+
+.header-logo {
+    width: 64px;
 }
 
 .main {
