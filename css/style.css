@@ -61,7 +61,12 @@ h3 {
 .dbwebb-header {
     margin-bottom: 0;
     border: none;
+
+}
+
+.dbwebb-header a {
     color: #333;
+    text-decoration: none;
 }
 
 .header-logo {
