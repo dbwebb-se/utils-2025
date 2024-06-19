@@ -25,13 +25,13 @@ function parseWarning(container) {
     const regexp = /\<p\>\[WARNING\]([.\s\S]*)\[\/WARNING\]<\/p\>/gim;
     const newTree = treeToParse.replace(
         regexp,
-        "<div class='info'>$1</div>"
+        "<div class='warning'>$1</div>"
     );
 
     container.innerHTML = newTree;
 }
 
-export { 
+export {
     parseYoutube,
     parseInfo,
     parseWarning,

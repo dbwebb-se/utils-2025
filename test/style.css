@@ -23,6 +23,7 @@
     border-radius: 4px;
     padding: 1.75rem;
     border: 1px solid rgb(110, 168, 254);
+    margin-bottom: 1.75rem;
 }
 
 .warning {
@@ -31,4 +32,5 @@
     border-radius: 4px;
     padding: 1.75rem;
     border: 1px solid rgb(255, 218, 106);
+    margin-bottom: 1.75rem;
 }
