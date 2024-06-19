@@ -186,8 +186,12 @@ table tbody tr:hover{
 
 pre {
     max-width: 100%;
-    overflow-x: scroll;
     margin-bottom: 1.75rem;
+}
+
+code {
+    max-width: 100%;
+    overflow-x: scroll;
 }
 
 @media (min-width: 67.5rem) {
