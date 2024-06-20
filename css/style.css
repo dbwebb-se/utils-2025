@@ -184,7 +184,8 @@ table tbody tr:hover{
     margin-bottom: 1.75rem;
 }
 
-.highlight {
+
+[class*="language"] {
     width: 100%;
     max-width: 100%;
     margin-bottom: 1.75rem;
