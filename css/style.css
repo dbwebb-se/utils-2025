@@ -139,9 +139,11 @@ table tbody tr:hover{
 
 .inner-footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    gap: 3rem;
 }
 
 .inner-footer img {
@@ -218,5 +220,10 @@ table tbody tr:hover{
     .sidebar {
         width: 20%;
         flex-shrink: 0;
+    }
+
+    .inner-footer {
+        width: 80%;
+        flex-direction: row;
     }
 }
