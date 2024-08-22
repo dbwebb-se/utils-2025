@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ site.title }}</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/dark.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dbwebb-se/utils-2025@v1.0.11/css/style.css" />
+
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <img src="https://cdn.jsdelivr.net/gh/dbwebb-se/utils-2025@main/img/leaf_256x256.png" alt="dbwebb-logo" class="header-logo" />
+            <h1 class="dbwebb-header">
+                <a href="https://dbwebb.se">dbwebb.se</a>
+            </h1>
+        </div>
+        <nav class="nav">
+            <p>Här bör finnas en meny</p>
+        </nav>
+    </header>
+    <main class="main" id="main">
+        <article class="article">
+            {{ content }}
+        </article>
+        <aside class="sidebar">
+            <h3>Innehåll</h3>
+            <nav id="toc" class="toc"></nav>
+            <h3>Författare:</h3>
+            <div class="author-images">
+                {% for author in page.author %}
+                    <img src="https://cdn.jsdelivr.net/gh/dbwebb-se/utils-2025@main/img/{{ author }}.jpg" alt="bild på {{ author }}" />
+                    <p>{{ author }}</p>
+                {% endfor %}
+            </div>
+        </aside>
+    </main>
+    <footer class="footer">
+        <div class="inner-footer">
+            <div>
+                <a href="https://dbwebb.se" target="_blank"><img src="https://cdn.jsdelivr.net/gh/dbwebb-se/utils-2025@main/img/leaf_256x256.png" alt="dbwebb-logo" /></a>
+                <p>dbwebb.se är en plattform för att publicera undervisningsmaterial och relaterad information till kurser på utbildningar inom BTH Webbprogrammering.</p>
+            </div>
+            <div>
+                <a href="https://bth.se" target="_blank"><img src="https://cdn.jsdelivr.net/gh/dbwebb-se/utils-2025@main/img/bth_logotyp_vit.png" alt="bth-logo" /></a>
+                <p>BTH bidrar till en hållbar samhällsutveckling genom högre utbildning, forskning och innovation. BTH bedriver utbildning och forskning inom områden där samhället har stora behov.</p>
+            </div>
+        </div>
+        <p>&copy; dbwebb.se</p>
+        <p>All material is released under the <a target="_blank" href="">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</a> License.</p>
+    </footer>
+
+    <script type="module">
+        import { parseYoutube, parseInfo, parseWarning } from "https://cdn.jsdelivr.net/gh/dbwebb-se/utils-2025@v1.0.11/js/parse.js";
+        import createToc from "https://cdn.jsdelivr.net/gh/dbwebb-se/utils-2025@v1.0.11/js/toc.js";
+
+        let article = document.getElementById("article");
+        let toc = document.getElementById("toc");
+
+        createToc(toc, article);
+
+        parseYoutube(article);
+        parseInfo(article);
+        parseWarning(article);
+
+        hljs.highlightAll();
+    </script>
+</body>
+</html>

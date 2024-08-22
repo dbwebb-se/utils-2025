@@ -17,8 +17,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-variation-settings:
-      "slnt" 0;
+    font-variation-settings: "slnt" 0;
 }
 
 p {
@@ -45,6 +44,23 @@ h3 {
 h4 {
     font-size: 1.4rem;
     margin-bottom: 1.75rem;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a {
+    color: #333;
+    text-decoration: none;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover {
+    text-decoration: underline;
 }
 
 .header {
@@ -147,7 +163,19 @@ table tbody tr:hover{
 }
 
 .inner-footer img {
-    height: 256px;
+    width: 256px;
+}
+
+.inner-footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+.inner-footer p {
+    font-size: 1rem;
 }
 
 .author-images {
@@ -160,6 +188,28 @@ table tbody tr:hover{
     margin-bottom: 1.75rem;
     border-radius: 50%;
     max-width: 100%;
+}
+
+.toc ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 0.8rem;
+}
+
+.toc ul li {
+    margin-bottom: 0.4rem;
+}
+
+.toc-H3 {
+    padding-left: 1rem;
+}
+
+.toc-H4 {
+    padding-left: 2rem;
+}
+
+.toc-H5 {
+    padding-left: 3rem;
 }
 
 .embed-container {
@@ -224,6 +274,10 @@ table tbody tr:hover{
 
     .inner-footer {
         width: 80%;
+        flex-direction: row;
+    }
+
+    .inner-footer div {
         flex-direction: row;
     }
 }

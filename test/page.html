@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>webapp</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/dark.min.css" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <img src="https://cdn.jsdelivr.net/gh/dbwebb-se/utils-2025@main/img/leaf_256x256.png" alt="dbwebb-logo" class="header-logo" />
+            <h1 class="dbwebb-header">
+                <a href="https://dbwebb.se">dbwebb.se</a>
+            </h1>
+        </div>
+        <nav class="nav">
+            <p>Här bör finnas en meny</p>
+        </nav>
+    </header>
+    <main class="main" id="main">
+        <article class="article" id="article">
+            <h1 id="webbapplikationer-för-mobila-enheter">Webbapplikationer för mobila enheter</h1>
+
+<p>Kursen <strong>Webbapplikationer för mobila enheter</strong>, a.k.a. <em>webapp</em>, lär dig hur du bygger applikationer för mobila enheter och läsplattor med HTML, CSS och JavaScript.</p>
+
+<p>Kursen syftar till att lära ut utveckling av webbapplikationer med HTML, CSS och JavaScript och fokuserar på mobila enheter och läsplattor.</p>
+
+<p>Kursen går igenom konstruktioner i HTML, CSS och JavaScript som hjälper dig bygga applikationer som är oberoende av skärmens storlek och enhetens styrning (mus, touchscreen, penna, tangentbord).</p>
+
+<p>Du bygger en applikation som använder sig av HTML, CSS och JavaScript på klientsidan och du jobbar med RESTful API:er och JSON-data för att bygga webappar.</p>
+
+<p>Via litteraturstudier och praktiska övningar förkovrar du dig i området. I slutet av kursen får du visa dina färdigheter i ett praktiskt programmeringsprojekt där allt integreras.</p>
+
+<h2 id="forkunskaper">Förkunskaper</h2>
+
+<p>Det formella förkunskapskravet är:</p>
+
+<blockquote>
+  <p>För tillträde till kursen krävs genomgångna kurser motsvarande 15 hp i programmering och webbteknologier varav 6 hp ska vara programmering med JavaScript.</p>
+</blockquote>
+
+<h2 id="innehall">Innehåll</h2>
+
+<p>Kursen omfattar följande områden:</p>
+
+<ul>
+  <li>HTML5, CSS3, JavaScript med mobilt fokus.</li>
+  <li>CSS3 för att styla webbapp som en “native app”.</li>
+  <li>Mobilen och läsplattan som test och utvecklingsmiljö.</li>
+  <li>Touch-event.</li>
+  <li>Responsive design, storlekar, landskap, portätt.
+<!-- * Koppling mot server och databas. --></li>
+  <li>Jobba med RESTful API:er och JSON.</li>
+  <li>Mobil prestanda och tillgänglighet.</li>
+  <li>Att använda hårdvarufunktioner som är specifika på mobila enheter, tex splash-screens, logotyper och filhantering.</li>
+  <li>Jobba med webappar och hybrid webapp för att komma åt hårdvarunära funktioner.</li>
+  <li>Felsökning och tekniker att debugga sitt program.</li>
+  <li>Utvecklingsmiljö och verktyg för utveckling av mobila appar.</li>
+</ul>
+
+<h2 id="mal">Mål</h2>
+
+<h3 id="kunskap">Kunskap och förståelse</h3>
+
+<p>Efter genomförd kurs skall studenten:</p>
+
+<ul>
+  <li>påvisa grundläggande förståelse för utveckling av mobila applikationer med valda tekniker genom att skriftligen beskriva och sammanfatta erfarenheter och observationer från övningar och projekt.</li>
+  <li>påvisa god förståelse för mobila enheters begränsningar och styrkor samt anpassa mobila applikationer för tillgänglighet och användbarhet.</li>
+  <li>påvisa goda kunskaper i att skapa mobila appar, med HTML, CSS och JavaScript, genom att tillämpa dessa tekniker i praktiska övningar och projekt.</li>
+  <li>påvisa goda kunskaper i att använda JSON API:er för att hämta, skapa, uppdatera och ta bort data genom att använda JSON API:er i praktiska övningar och projekt.</li>
+</ul>
+
+<h3 id="fardighet">Färdighet och förmåga</h3>
+
+<p>Efter genomförd kurs skall studenten:</p>
+
+<ul>
+  <li>självständigt utveckla, dokumentera och presentera ett projekt baserat på utveckling av en mobil app.</li>
+  <li>ha god praktisk förmåga att hantera de verktyg och miljöer som används vid utveckling och felsökning av mobila appar med valda tekniker.</li>
+</ul>
+
+<h2 id="kursmoment">Kursmoment</h2>
+
+<p>Kursen är uppdelad i kursmoment där varje kursmoment uppskattas till 20h studerande i form av programmering, undersökning, läsande, övningar, uppgifter, redovisning och eftertanke. Alla kursmoment skall redovisas och du samlar alla redovisningar i din me-sida.</p>
+
+<h3 id="kmom01">Kmom01: Web Components</h3>
+
+<p>Tanken är att komma igång med utveckling av mobila applikationer. De mobila applikationerna utvecklar vi med tekniker baserade på HTML, CSS och JavaScript. Vi ser hur vi kan utnyttja dessa tekniker för att ändra innehållet utan att ladda om applikationen. Som ett första steg så läser vi på om grunderna och börjar så smått med det löpande projektet för alla sex kursmoment.</p>
+
+<p><a href="kmom01">Instruktion till kursmoment 01</a>.</p>
+
+<h3 id="kmom02">Kmom02: En router</h3>
+
+<p>Vi tar en titt på vilka begränsningar och utmaningar man står inför som användare av en mobil enhet. Vi brytar ut CSS koden från kmom01 till ett GUI komponentbaserad ramverk och lägger till fler GUI komponenter till vårt ramverk.</p>
+
+<p>Vi fortsätter med vår applikation från kmom01 och använder tekniker för skapa en egen router så vi kan navigera runt i vår applikation.</p>
+
+<p>Innan vi gör detta tittar vi på ett verktyg som hjälper oss att söka och visa information i JSON-filer.</p>
+
+<p><a href="kmom02">Instruktion till kursmoment 02</a>.</p>
+
+<h3 id="kmom03">Kmom03: Formulär och CRUD</h3>
+
+<p>I detta kursmoment fortsätter vi med att utveckla våra GUI komponenter från tidigare kursmoment. Vi skapar lättanvända formulärfält med hjälp av HTML5 och kopplar ihop fälten i formulär som är lätta att använda på små skärmar där kontext och möjligheten att skriva snabbt och enkelt saknas.</p>
+
+<p>I vår applikation lägger vi till möjligheten att skapa, uppdatera och ta bort data via formulär.</p>
+
+<p><a href="kurser/webapp-v5/kmom03">Instruktion till kursmoment 03</a>.</p>
+
+<h3 id="kmom04">Kmom04: Autentisering med JWT</h3>
+
+<p>Vi fortsätter med Lager appen och lägger till en funktion för att skapa fakturor utifrån en order. Alla ska inte kunna skapa fakturor så innan vi skapar faktura funktionen skapar vi inloggning och tittar på JSON Web Tokens för autentisering.</p>
+
+<p>När man skapar en faktura är det bra att ha snygga och responsiva tabeller. Så kursmomentets GUI-komponent är just tabeller och hur vi optimerar dessa för mobila enheter.</p>
+
+<p><a href="kurser/webapp-v5/kmom04">Instruktion till kursmoment 04</a>.</p>
+
+<h3 id="kmom05">Kmom05: Mobila enheters styrkor</h3>
+
+<p>Vi tar en titt på hur vi kan använda externa npm-moduler direkt i applikation när vi bygger en karta i appen. Sedan tittar vi på hur vi kan använda webbens inbyggda API:er för att hämta användarens GPS-position.</p>
+
+<p><a href="kurser/webapp-v5/kmom05">Instruktion till kursmoment 05</a>.</p>
+
+<h3 id="kmom06">Kmom06: Real-tids kommunikation</h3>
+
+<p>I detta kursmoment fortsätter vi att utnyttja styrkorna i våra mobila enheter. Vi tittar vidare på webbens inbyggda API:er och hur vi kan använda dessa för att skapa mer fullvärdiga webb applikationer.</p>
+
+<p><a href="kurser/webapp-v5/kmom06">Instruktion till kursmoment 06</a>.</p>
+
+<h3 id="kmom10">Kmom07/10: Projekt och examination</h3>
+
+<p>Avslutningsvis gör du ett projekt enligt en specifikation. Projektet är det sista som du gör och används som underlag för att examinera dig från kursen.</p>
+
+<p>Projektet bygger på tidigare kursmoment och med dina nya erfarenheter skapar du en tillgänglig och användbar mobil applikation enligt specifikationen.</p>
+
+<p><a href="kurser/webapp-v5/kmom10">Instruktion till kursmoment 10</a>.</p>
+
+<h2 id="litteratur">Kurslitteratur</h2>
+
+<p><a href="kurser/maste-jag-skaffa-kurslitteraturen">Måste jag skaffa kurslitteraturen</a>?</p>
+
+<h3 id="referenslitteratur">Referenslitteratur</h3>
+
+<p>Följande böcker har jag valt som referenslitteratur. De kan vara bra att ha tillhands och ger lite extra läsmöjligheter. De behövs inte för att klara kursen men vill du bemästra kursens område så är dessa böcker bra startpunkter.</p>
+
+<ul>
+  <li>
+    <p><strong><a href="kunskap/boken-javascript-the-good-parts">JavaScript: The Good Parts</a></strong> – D. Crockford
+En genomgång av JavaScript Core och hur man ska, och inte ska, skriva sin kod.</p>
+  </li>
+  <li>
+    <p><strong><a href="kunskap/boken-you-dont-know-javascript">You Don’t Know JS</a></strong> – K. Simpson (@getify)
+Om du vill förstå JavaScript på djupet och därigenom bli kung på JavaScript, men samtidigt en bättre programmerare rekommenderas You Don’t Know JS starkt.</p>
+  </li>
+  <li>
+    <p><strong><a href="boken-html-och-css-boken">HTML och CSS-boken</a></strong> – Rolf Staflin
+En stabil bok för att komma igång med HTML och CSS.</p>
+  </li>
+</ul>
+
+<h3 id="ovriglitteratur">Övrig litteratur</h3>
+
+<p>I varje kursmoment kan det tillkomma läsanvisningar i till exempel artiklar, manualer och webbmaterial.</p>
+
+<h2 id="studieplan">Rekommenderad studieplan</h2>
+
+<p>Kursen har en <a href="kurser/webapp/studieplan">rekommenderad studieplan</a> som visar en översikt över kursens olika moment och när de i tiden bör utföras för att studenten skall ligga i fas med kursens planering.</p>
+
+<p>I studieplanen visas när rättning sker av respektive inlämnat moment samt när det finns möjligheter att göra restinlämningar.</p>
+
+<p>Läs mer om den <a href="kurser/faq/rekommenderad-studieplan">rekommenderade studieplanen</a>.</p>
+
+<h2 id="lektionsplan">Lektionsplan</h2>
+
+<p>Det finns en <a href="kurser/webapp/lektionsplan">lektionsplan</a> som visar en detaljplanering för undervisningen i kursen, vecka för vecka.</p>
+
+<p>Läs mer om <a href="kurser/faq/lektionsplan-och-schema">lektionsplanen</a>.</p>
+
+<h2 id="handledning">Lärarstöd och handledning</h2>
+
+<p>Schemalagda labbtillfällen, hangouts samt forum och chatt de viktigaste källorna för handledning. Läs om <a href="kurser/faq/lararstod-och-handledning">handledning och hjälp-till-självhjälp</a>.</p>
+
+<p>Ofta ställda frågor (FAQ) finns på <a href="https://github.com/dbwebb-se/webapp/issues?q=is%3Aopen+is%3Aissue+label%3Afaq">GitHub issues</a>.</p>
+
+<h2 id="betyg">Betygsättning</h2>
+
+<p>Det finns ett särskilt dokument som beskriver <a href="kurser/bedomning-och-betygsattning">hur bedömning och betygsättning sker</a>.</p>
+
+<h2 id="ladok">Ladok</h2>
+
+<p>Enligt kursplanen finns ett antal ladokmoment och de är kopplade till kursens kursmoment enligt följande.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kursens moment</th>
+      <th>Ladok moment enligt kursplan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kmom01 + kmom02</td>
+      <td>Uppgift 1 á 2.5hp</td>
+    </tr>
+    <tr>
+      <td>Kmom03 + kmom04</td>
+      <td>Uppgift 2 á 2.5hp</td>
+    </tr>
+    <tr>
+      <td>Kmom05 - kmom10</td>
+      <td>Projekt á 2.5hp</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Läs mer om <a href="kurser/faq/resultatrapportering">rapportering av resultat</a>.</p>
+
+<h2 id="kursutvardering">Kursutvärdering och kursutveckling</h2>
+
+<p>Det finns ett särskilt dokument som beskriver hur arbetet med kursutvärderingar och kursutveckling sker. Det är oerhört viktigt för mig att du säger till vad du tycker om kurs och kursmaterial, du kan alltid hojta till i både forum, chatt eller mail.</p>
+
+<p>Läs om hur <a href="kurser/kursutvardering-och-kursutveckling">jag jobbar med kursutvärdering och kursutveckling</a>.</p>
+
+<h2 id="kursplan">Kursplan</h2>
+
+<p>Kursplanen är kursens formella dokument som fastställts av högskolan. När kursen utvärderas görs det mot kursplanen. I kursplanen kan du läsa om kursens klassificering, syfte, innehåll, mål, generella förmågor, lärande och undervisning, bedömning och examination, litteratur, mm.</p>
+
+<p>Kursens namn är “Webbapplikationer för mobila enheter”.</p>
+
+<p>Från och med våren 2019 hittar du <a href="http://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod=DV1609">kursplanen genom att söka på kurskoden DV1609 via BTH’s hemsida</a>.</p>
+
+<p>Fram till våren 2018 så gavs kursen under <a href="http://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod=DV1546">kurskoden DV1546</a>.</p>
+
+        </article>
+        <aside class="sidebar">
+            <h3>Innehåll</h3>
+            <nav id="toc" class="toc"></nav>
+            <h3>Författare:</h3>
+            <div class="author-images">                
+                <img src="https://cdn.jsdelivr.net/gh/dbwebb-se/utils-2025@main/img/efo.jpg" alt="bild på efo" />
+                <p>efo</p>                
+            </div>
+        </aside>
+    </main>
+    <footer class="footer">
+        <div class="inner-footer">
+            <div>
+                <a href="https://dbwebb.se" target="_blank"><img src="https://cdn.jsdelivr.net/gh/dbwebb-se/utils-2025@main/img/leaf_256x256.png" alt="dbwebb-logo" /></a>
+                <p>dbwebb.se är en plattform för att publicera undervisningsmaterial och relaterad information till kurser på utbildningar inom BTH Webbprogrammering.</p>
+            </div>
+            <div>
+                <a href="https://bth.se" target="_blank"><img src="https://cdn.jsdelivr.net/gh/dbwebb-se/utils-2025@main/img/bth_logotyp_vit.png" alt="bth-logo" /></a>
+                <p>BTH bidrar till en hållbar samhällsutveckling genom högre utbildning, forskning och innovation. BTH bedriver utbildning och forskning inom områden där samhället har stora behov.</p>
+            </div>            
+        </div>
+        <p>&copy; dbwebb.se</p>
+    </footer>
+
+    <script type="module">
+        import { parseYoutube, parseInfo, parseWarning } from "https://cdn.jsdelivr.net/gh/dbwebb-se/utils-2025@v1.0.10/js/parse.js";
+        import createToc from "../js/toc.js";
+
+        let article = document.getElementById("article");
+        let toc = document.getElementById("toc");
+
+        createToc(toc, article);
+
+        parseYoutube(article);
+        parseInfo(article);
+        parseWarning(article);
+
+        hljs.highlightAll();
+    </script>
+</body>
+</html>
