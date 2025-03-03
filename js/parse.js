@@ -33,7 +33,7 @@ function parseWarning(container) {
 
 function parseImg(container) {
     const treeToParse = container.innerHTML;
-    const regexp = /\<p\>\[FIGURE src=(.*)\s.*]\<\/p\>/gim;
+    const regexp = /\<p\>\[FIGURE src=(.*)[\]|\s]\<\/p\>/gim;
     const newTree = treeToParse.replace(
         regexp,
         `<picture>
@@ -47,7 +47,7 @@ function parseImg(container) {
 
 function parseAsciinema(container) {
     const treeToParse = container.innerHTML;
-    const regexp = /\<p\>\[ASCIINEMA src=(.*)\s.*]\<\/p\>/gim;
+    const regexp = /\<p\>\[ASCIINEMA src=(\w*)[\]|\s]\<\/p\>/gim;
     const newTree = treeToParse.replace(
         regexp,
         `<script src="https://asciinema.org/a/$1.js" id="asciicast-$1" async></script>`
