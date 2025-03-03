@@ -31,8 +31,23 @@ function parseWarning(container) {
     container.innerHTML = newTree;
 }
 
+function parseImg(container) {
+    const treeToParse = container.innerHTML;
+    const regexp = /\<p\>\[FIGURE src=(.*)\s.*]\<\/p\>/gim;
+    const newTree = treeToParse.replace(
+        regexp,
+        `<picture>
+            <img src="https://dbwebb.se/$1" />
+        </picture>
+        `
+    );
+
+    container.innerHTML = newTree;
+}
+
 export {
     parseYoutube,
     parseInfo,
     parseWarning,
+    parseImg,
 };
