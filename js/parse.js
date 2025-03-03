@@ -45,9 +45,21 @@ function parseImg(container) {
     container.innerHTML = newTree;
 }
 
+function parseAsciinema(container) {
+    const treeToParse = container.innerHTML;
+    const regexp = /\<p\>\[ASCIINEMA src=(.*)\s.*]\<\/p\>/gim;
+    const newTree = treeToParse.replace(
+        regexp,
+        `<script src="https://asciinema.org/a/$1.js" id="asciicast-$1" async></script>`
+    );
+
+    container.innerHTML = newTree;
+}
+
 export {
     parseYoutube,
     parseInfo,
     parseWarning,
     parseImg,
+    parseAsciinema,
 };
