@@ -1,6 +1,6 @@
 function parseYoutube(container) {
     const treeToParse = container.innerHTML;
-    const regexp = /\<p\>\[YOUTUBE src\=([a-zA-Z0-9\-]+)\s.*caption=”(.*)”.*\]\<\/p\>/gi;
+    const regexp = /\<p\>\[YOUTUBE src\=([a-zA-Z0-9\-\_]+)\s.*caption=”(.*)”.*\]\<\/p\>/gi;
     const newTree = treeToParse.replace(
         regexp,
         "<div class='embed-container'><iframe src='https://www.youtube.com/embed/$1' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe></div><p>$2</p>"
@@ -33,7 +33,7 @@ function parseWarning(container) {
 
 function parseImg(container) {
     const treeToParse = container.innerHTML;
-    const regexp = /\<p\>\[FIGURE src=(.*)[\]|\s]\<\/p\>/gim;
+    const regexp = /\[FIGURE.*src=([-\.\w\/\?\=]*).*\]/gim;
     const newTree = treeToParse.replace(
         regexp,
         `<picture>
@@ -45,21 +45,9 @@ function parseImg(container) {
     container.innerHTML = newTree;
 }
 
-function parseAsciinema(container) {
-    const treeToParse = container.innerHTML;
-    const regexp = /\<p\>\[ASCIINEMA src=(\w*)[\]|\s]\<\/p\>/gim;
-    const newTree = treeToParse.replace(
-        regexp,
-        `<script src="https://asciinema.org/a/$1.js" id="asciicast-$1" async></script>`
-    );
-
-    container.innerHTML = newTree;
-}
-
 export {
     parseYoutube,
     parseInfo,
     parseWarning,
     parseImg,
-    parseAsciinema,
 };
